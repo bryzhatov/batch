@@ -1,0 +1,17 @@
+spring:
+
+  batch:
+    initialize-schema: never
+
+  jpa:
+    generate-ddl: true
+    hibernate.ddl-auto: create
+    database: postgresql
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+
+  datasource:
+    password: dima
+    initialize: true
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/batch
